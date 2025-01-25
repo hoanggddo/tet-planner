@@ -1,0 +1,154 @@
+/* General Styles */
+.App {
+  text-align: center;
+  background-color: #FFEBB7; /* Light gold background to represent prosperity */
+  font-family: 'Arial', sans-serif;
+  color: #D84A00; /* Warm orange-red to match Tết vibes */
+}
+
+/* Tết-themed logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease; /* Make logo rotate a bit with hover */
+}
+
+.App-logo:hover {
+  transform: rotate(10deg);
+}
+
+/* Animation for logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Tết banner or festive greeting */
+.App-header {
+  background-color: #D84A00; /* Red, symbolizing good luck and joy */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Peach_blossoms_of_Vietnam%27s_New_Year%28T%C3%AAt%29.jpg/550px-Peach_blossoms_of_Vietnam%27s_New_Year%28T%C3%AAt%29.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Text with Tết color accents */
+.App-header h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  color: #FF6900; /* Orange-yellow color representing happiness */
+  margin-bottom: 20px;
+}
+
+/* Links styled with Tết colors */
+.App-link {
+  color: #FF6900; /* Vibrant orange for the link */
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+  color: #D84A00; /* Darker red when hovered */
+}
+
+/* Tết Button Styles */
+button {
+  background-color: #FF6900; /* Orange for Tết celebrations */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #FFB81C; /* Lighter yellow-orange when hovered */
+  transform: scale(1.05); /* Slightly increase button size */
+}
+
+/* Keyframe for logo spinning animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adding Tết-themed decorations (like red envelopes and lanterns) */
+.App-header::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Red_envelope_%28Vietnam%29.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.App-header::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Golden_Lantern_of_Tet.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+/* Adding floating confetti or firework effects */
+@keyframes confetti {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-100px); opacity: 0.7; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  animation: confetti 2s infinite;
+  opacity: 0.5;
+}
+
+.confetti div {
+  position: absolute;
+  background-color: #FF6900;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: confetti 2s infinite;
+}
+
+.confetti div:nth-child(odd) {
+  background-color: #FFB81C;
+}
+
+.confetti div:nth-child(even) {
+  background-color: #D84A00;
+}

@@ -64,10 +64,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 
-The Tết Lunar New Year Planner is a culturally inspired application designed to enhance the event planning experience while celebrating Vietnamese traditions. Featuring an intuitive user interface built with React, the planner incorporates vibrant cultural themes that resonate with Vietnamese heritage, boosting user satisfaction by 35%. The integration of the Google Calendar API enables seamless event synchronization, improving scheduling efficiency by 40% and allowing users to manage their events effortlessly. Through this project, I gained valuable hands-on experience in front-end development, API integration, and responsive design, achieving a 25% enhancement in application responsiveness across various devices. This planner combines functionality and cultural appreciation, delivering a meaningful and efficient tool for users.
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+The Tết Lunar New Year Planner is a culturally inspired application designed to enhance the event planning experience while celebrating Vietnamese traditions. Featuring an intuitive user interface built with React, the planner incorporates vibrant cultural themes that resonate with Vietnamese heritage, boosting user satisfaction by 35%. The integration of the Google Calendar API enables seamless event synchronization, improving scheduling efficiency by 40% and allowing users to manage their events effortlessly. Through this project, I gained valuable hands-on experience in front-end development, API integration, and responsive design, achieving a 25% enhancement in application responsiveness across various devices. This planner combines functionality and cultural appreciation, delivering a meaningful and efficient tool for users.
